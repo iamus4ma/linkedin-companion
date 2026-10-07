@@ -1,0 +1,9 @@
+# LinkedIn Comment Copilot
+
+New private Site registered in .openai/hosting.json. Publication is pending because Sites source-credential renewal and get_site calls failed with an HTTP transport error to chatgpt.com/backend-api/ps/mcp. Do not create a replacement Site. Renew the source write credential for the existing project, then run the bundled site-workflow helper and save_version_and_deploy_private. The registration credential expired before publishing and was never written to disk.
+
+React workspace: app/workspace.tsx. Durable workspace: D1 DB, app/api/workspace/route.ts; migration in drizzle/. Groq/OpenAI configuration remains on the local companion. Downloadable bundle: public/companion.zip. Local preview defaults to http://127.0.0.1:5173, and is currently served by the retained dev session. The companion runs at 4318 and must be restarted after server.mjs changes. New routes: /automation-login, /scan, /prepare-automated. Existing manual dashboard behavior is preserved.
+
+Production build, TypeScript checks, browser UI flows, real preview database persistence, short-link import, job/discussion filters, repeat-scan deduplication, and responsive widths 320/375/414/768/1280 passed. Browser tests mocked the AI and companion endpoints. Automation logic tests mocked Playwright and AI. Live LinkedIn selectors and AI generation still need the user's signed-in companion Chrome session and configured API key. No comments were posted.
+
+Windows npm.cmd needed a project-local launcher in ignored .sites-runtime/bin/npm.cmd. The build helper succeeds when that directory is prepended to PATH. Use the Sites helper from C:/Users/LPT394/.codex/plugins/cache/openai-curated-remote/sites/0.1.75/scripts/. Do not commit runtime credentials, API keys, pairing tokens, profiles, or .sites-runtime.

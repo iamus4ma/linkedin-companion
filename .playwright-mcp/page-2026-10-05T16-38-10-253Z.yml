@@ -1,0 +1,181 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e2]:
+    - link "c copilot ." [ref=e3] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=e4]: c
+      - text: copilot
+      - generic [ref=e5]: .
+    - generic [ref=e6]: PERSONAL WORKSPACE
+    - navigation [ref=e7]:
+      - button "◈ Discover 3" [ref=e8] [cursor=pointer]:
+        - text: ◈
+        - generic [ref=e9]: Discover
+        - generic [ref=e10]: "3"
+      - button "✓ Approved queue" [ref=e11] [cursor=pointer]:
+        - text: ✓
+        - generic [ref=e12]: Approved queue
+      - button "◷ Activity" [ref=e13] [cursor=pointer]:
+        - text: ◷
+        - generic [ref=e14]: Activity
+      - button "⚙ Preferences" [ref=e15] [cursor=pointer]:
+        - text: ⚙
+        - generic [ref=e16]: Preferences
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - text: ✧
+        - strong [ref=e19]: Your voice. A little amplified.
+        - paragraph [ref=e20]: Good conversations start with something worth saying.
+      - generic [ref=e21]:
+        - generic [ref=e22]: UH
+        - generic [ref=e23]:
+          - text: Usama Hassan
+          - generic [ref=e24]: Personal workspace
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - text: Workspace
+        - emphasis [ref=e28]: /
+        - text: Discover
+      - button "Companion offline ↗" [ref=e29] [cursor=pointer]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: A LITTLE INTENTION GOES A LONG WAY
+          - heading "Find your next conversation." [level=1] [ref=e35]
+          - paragraph [ref=e36]: Relevant ideas. Thoughtful comments. Always your voice.
+        - generic [ref=e37]:
+          - button "＋ Add post" [ref=e38] [cursor=pointer]
+          - button "✧ Find posts" [ref=e39] [cursor=pointer]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - text: CONVERSATIONS TO EXPLORE
+            - generic [ref=e43]: ◈
+          - strong [ref=e44]: "03"
+          - text: waiting for your perspective
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - text: APPROVED COMMENTS
+            - generic [ref=e47]: ✓
+          - strong [ref=e48]: "00"
+          - text: thoughtfully reviewed
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - text: YOUR INTERESTS
+            - generic [ref=e51]: ✧
+          - strong [ref=e52]: "04"
+          - text: topics worth following
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - button "All topics" [ref=e57] [cursor=pointer]
+              - button "React" [ref=e58] [cursor=pointer]
+              - button "AI engineering" [ref=e59] [cursor=pointer]
+              - button "React Native" [ref=e60] [cursor=pointer]
+            - generic [ref=e61]: Best match ↓
+          - textbox "Search posts" [ref=e62]:
+            - /placeholder: Search conversations…
+          - generic [ref=e63]: ○ Sample workspace · Connect your companion or add a real post to get started.
+          - generic [ref=e64]:
+            - article [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - generic [ref=e68]: AM
+                  - generic [ref=e69]:
+                    - strong [ref=e70]: Alex Morgan
+                    - generic [ref=e71]: Frontend engineer · Sample post
+                - generic [ref=e72]: 94% match
+              - heading "Server components changed where I draw the line." [level=3] [ref=e73]
+              - paragraph [ref=e74]: The most interesting part of React Server Components isn’t the smaller bundle. It’s being more deliberate about where interactivity actually belongs. Start on the server. Move to the client when the experience needs it. How are you deciding that boundary?
+              - generic [ref=e75]:
+                - generic [ref=e76]: React
+                - generic [ref=e77]: Illustrative content
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: ✧ SAMPLE COMMENT
+                  - generic [ref=e81]: Editable · 235 characters
+                - textbox "Comment for Alex Morgan" [ref=e82]:
+                  - /placeholder: Generate a suggestion or write your own…
+                  - text: The boundary question is the useful one here. I’d keep data-heavy, read-only sections on the server and isolate interactive controls into smaller client components. How has that approach affected your loading states and error handling?
+              - generic [ref=e83]:
+                - button "✓ Use comment" [ref=e84] [cursor=pointer]
+                - button "⟳ Regenerate" [ref=e85] [cursor=pointer]
+                - button "Skip →" [ref=e86] [cursor=pointer]
+            - article [ref=e87]:
+              - generic [ref=e88]:
+                - generic [ref=e89]:
+                  - generic [ref=e90]: JC
+                  - generic [ref=e91]:
+                    - strong [ref=e92]: Jamie Chen
+                    - generic [ref=e93]: Building with AI · Sample post
+                - generic [ref=e94]: 87% match
+              - heading "The best AI agents know when to stop." [level=3] [ref=e95]
+              - paragraph [ref=e96]: We keep measuring agents by how much they can do autonomously. Maybe we should also measure how well they recognize when a human needs to step in. A useful agent gets you to a good decision, not just to a completed task.
+              - generic [ref=e97]:
+                - generic [ref=e98]: AI engineering
+                - generic [ref=e99]: Illustrative content
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - generic [ref=e102]: ✧ SAMPLE COMMENT
+                  - generic [ref=e103]: Editable · 251 characters
+                - textbox "Comment for Jamie Chen" [ref=e104]:
+                  - /placeholder: Generate a suggestion or write your own…
+                  - text: A clear approval boundary seems just as important as the model itself. For a developer workflow, I’d let an agent investigate and propose changes, then require review before anything reaches production. What signals do you use to trigger that handoff?
+              - generic [ref=e105]:
+                - button "✓ Use comment" [ref=e106] [cursor=pointer]
+                - button "⟳ Regenerate" [ref=e107] [cursor=pointer]
+                - button "Skip →" [ref=e108] [cursor=pointer]
+            - article [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: TB
+                  - generic [ref=e113]:
+                    - strong [ref=e114]: Taylor Brooks
+                    - generic [ref=e115]: Mobile developer · Sample post
+                - generic [ref=e116]: 82% match
+              - heading "A fast mobile app starts before the first animation." [level=3] [ref=e117]
+              - paragraph [ref=e118]: "Performance work in React Native often starts with animations. But the biggest wins can be simpler: fewer unnecessary renders, smaller payloads, and a screen that communicates progress clearly."
+              - generic [ref=e119]:
+                - generic [ref=e120]: React Native
+                - generic [ref=e121]: Illustrative content
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - generic [ref=e124]: ✧ SAMPLE COMMENT
+                  - generic [ref=e125]: Editable · 221 characters
+                - textbox "Comment for Taylor Brooks" [ref=e126]:
+                  - /placeholder: Generate a suggestion or write your own…
+                  - text: Perceived performance deserves more attention. Showing useful content progressively can improve the experience even before render optimization. How do you separate network delays from rendering bottlenecks when profiling?
+              - generic [ref=e127]:
+                - button "✓ Use comment" [ref=e128] [cursor=pointer]
+                - button "⟳ Regenerate" [ref=e129] [cursor=pointer]
+                - button "Skip →" [ref=e130] [cursor=pointer]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - heading "✧ Your corner of LinkedIn" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Conversations aligned with what you care about.
+            - generic [ref=e135]: React
+            - generic [ref=e136]: React Native
+            - generic [ref=e137]: AI engineering
+            - generic [ref=e138]: TypeScript
+            - button "Adjust your interests ↗" [ref=e139] [cursor=pointer]
+          - generic [ref=e140]:
+            - heading "You’re in the driver’s seat" [level=3] [ref=e141]
+            - generic [ref=e142]:
+              - generic [ref=e143]: "1"
+              - generic [ref=e144]:
+                - strong [ref=e145]: Discover something relevant
+                - paragraph [ref=e146]: Find ideas in your corner of the internet.
+            - generic [ref=e147]:
+              - generic [ref=e148]: "2"
+              - generic [ref=e149]:
+                - strong [ref=e150]: Make the comment yours
+                - paragraph [ref=e151]: Review, refine, then approve.
+            - generic [ref=e152]:
+              - generic [ref=e153]: "3"
+              - generic [ref=e154]:
+                - strong [ref=e155]: Start a real conversation
+                - paragraph [ref=e156]: Copy and open in Chrome. Paste your comment and click Post.
+    - generic [ref=e157]:
+      - generic [ref=e158]: Thoughtful comments. Real connections.
+      - generic [ref=e159]: Made for a human in the loop ●

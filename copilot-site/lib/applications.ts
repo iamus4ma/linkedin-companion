@@ -1,0 +1,12 @@
+export type Application={id:string;title:string;company:string;url:string;source:string;description:string;status:'saved'|'review'|'approved'|'applied';score:number|null;summary:string;matches:string[];gaps:string[];resume:string;coverLetter:string;evidence:{claim:string;source:string}[];provider?:'groq'|'ollama';model:string;generatedAt:string;approvedAt:string;appliedAt:string};
+export type Contact={fullName:string;firstName:string;lastName:string;email:string;phone:string;linkedin:string;portfolio:string};
+export const emptyContact:Contact={fullName:'',firstName:'',lastName:'',email:'',phone:'',linkedin:'',portfolio:''};
+export type ApplicationWorkspace={provider?:'groq'|'ollama';contact:Contact;cvFilename:string;profile:string;masterCV:string;model:string;jobs:Application[]};
+export const emptyApplications:ApplicationWorkspace={provider:'groq',contact:emptyContact,cvFilename:'',profile:'',masterCV:'',model:'',jobs:[]};
+export function validApplicationURL(value:string){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&!u.port}catch{return false}}
+export function validateApplications(value:ApplicationWorkspace){
+ if(!value||(value.provider!==undefined&&!["groq","ollama"].includes(value.provider))||!value.contact||Object.keys(emptyContact).some(k=>typeof value.contact[k as keyof Contact]!=='string'||value.contact[k as keyof Contact].length>500)||typeof value.cvFilename!=='string'||typeof value.profile!=='string'||value.profile.length>12000||typeof value.masterCV!=='string'||value.masterCV.length>50000||typeof value.model!=='string'||value.model.length>200||!Array.isArray(value.jobs)||value.jobs.length>100)return false;
+ return value.jobs.every(j=>j&&['id','title','company','url','source','description','summary','resume','coverLetter','model','generatedAt','approvedAt','appliedAt'].every(k=>typeof j[k as keyof Application]==='string'&&(j[k as keyof Application] as string).length<=50000)&&(!j.url||validApplicationURL(j.url))&&['saved','review','approved','applied'].includes(j.status)&&(j.score===null||(Number.isInteger(j.score)&&j.score>=0&&j.score<=100))&&['matches','gaps'].every(k=>Array.isArray(j[k as 'matches'])&&j[k as 'matches'].every(s=>typeof s==='string'))&&Array.isArray(j.evidence)&&j.evidence.every(e=>typeof e.claim==='string'&&typeof e.source==='string'));
+}
+
+export function applicationJobKey(value:string){try{const u=new URL(value);return /(^|\.)linkedin\.com$/.test(u.hostname)?u.pathname.match(/^\/jobs\/view\/(?:[^/]*-)?(\d+)\/?$/)?.[1]||u.href:u.href}catch{return value}}

@@ -1,0 +1,21 @@
+{
+  "name": "comment-copilot-companion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node start.mjs",
+    "check": "node --check server.mjs && node --check start.mjs && node --check automation.mjs && node --check jobs.mjs && node --check applications.mjs && node --check application-browser.mjs && node --check application-documents.mjs && node --check job-search.mjs",
+    "dashboard": "node start-dashboard.mjs",
+    "test": "node --test jobs.test.mjs start.test.mjs applications.test.mjs job-search.test.mjs"
+  },
+  "dependencies": {
+    "docx": "^9.8.1",
+    "mammoth": "^1.13.0",
+    "ollama": "^0.6.4",
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.56.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

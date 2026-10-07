@@ -1,0 +1,3 @@
+export type Post = { id:string; url:string; author:string; title:string; text:string; comment:string; score:number|null; topic:string; kind:'discussion'|'job'; reason:string; summary:string; status:'review'|'approved'|'prepared'|'skipped'; };
+export type Settings = { interests:string; voice:string; jobLocation:string; minScore:number; profile:string; maxPosts:number; datePosted:string; };
+export const defaults:Settings = {interests:'React, TypeScript, Next.js, frontend engineering, AI development',voice:'Practical, thoughtful, conversational. Express interest in relevant jobs without inventing qualifications.',jobLocation:'Islamabad, remote',minScore:60,profile:'',maxPosts:6,datePosted:'any'};
