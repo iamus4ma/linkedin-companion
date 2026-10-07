@@ -1,4 +1,5 @@
 # Comment Copilot local companion
+
 Requires Node.js 22+ and Google Chrome installed. Run `npm install`.
 Set GROQ_API_KEY for Groq or OPENAI_API_KEY for OpenAI in your terminal (never in the dashboard). Groq takes priority if both are set. Optional GROQ_MODEL defaults to openai/gpt-oss-20b; OPENAI_MODEL defaults to gpt-4.1-mini. Run `npm start`, open http://127.0.0.1:4318 and paste the terminal's pairing token in Preferences. Save, then test the connection.
 
